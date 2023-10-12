@@ -1,0 +1,28 @@
+# File node0.toml
+
+[parity]
+chain = "spec.json"
+base_path = "node0"
+
+
+[network]
+port = 30300
+bootnodes = ["enode://646e58b9e7138df29bb36845b8bedc4a56c22d472b8bddd004dde963412a1b4be4a56936d130bf6e028946fe2e776098a683399e1aca3bed1d5e0c759511acb1@165.22.208.213:30300",
+"enode://f15d82fcd2e83cc51e7da2e60982e9bf8dc1a0228d9db9c3b01bd6fea0f7722e54107433f00366c4db5e04b40967e826f09bb516087a14116ba2c846a0c01110@165.22.208.213:30301",
+#"enode://81681771241453378b73d341d3c9fd3d2c2b5fcb5fa655ec71924abff9dc103cdf98b2b64a387424f263c00800002c48d0688a1f65b2ad46a734b70833b26d38@165.22.208.213:30302",
+"enode://a7d63033d2b7508d12f91b391659c1eecef26141a30b8bf4e876c268bc4a07ef43a4d350d27d62484d5d7f1badccf5a7017cfb8487a36c771e179a96753461f6@165.22.208.213:30303"]
+
+[rpc]
+disable = true
+
+[websockets]
+disable = true
+
+[account]
+password = ["node0.pwd"]
+
+[mining]
+engine_signer = "0xcff1497944c43482510a0eade3d837ed554dbbd8"
+reseal_on_txs = "none"
+force_sealing = true
+
